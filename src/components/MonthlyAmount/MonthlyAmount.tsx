@@ -12,8 +12,8 @@ const MonthlyAmount = (props: Partial<Props>): JSX.Element => {
         <div style={styles.price}>{monthlyAmount}</div>
       </div>
       <p style={styles.text}>
-        You’re planning<strong>48 monthly deposits</strong> to reach your
-        <strong>{price}</strong> goal by <strong>October 2020.</strong>
+        You’re planning<strong> 48 monthly deposits</strong> to reach your
+        <strong> {price}</strong> goal by <strong>October 2020.</strong>
       </p>
     </div>
   );

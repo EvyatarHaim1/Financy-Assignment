@@ -1,4 +1,3 @@
-import React from "react";
 import Content from "./components/Content";
 import { styles } from "./App.styles";
 

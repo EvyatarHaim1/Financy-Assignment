@@ -1,13 +1,27 @@
+import { colors } from "../../constants";
+
 export const styles = {
   container: {
     display: "flex",
-    height: "29px",
+    height: "24px",
     marginBottom: "28px",
   },
 
   fields: {
     display: "flex",
+    flexDirection: "column" as "column",
     marginLeft: "16px",
-    //flexDirection: "column" as "column",
+  },
+
+  title: {
+    fontSize: "24px",
+    fontFamily: "Rubik",
+    marginBottom: "4px",
+    color: colors["title"],
+  },
+
+  subTitle: {
+    color: colors["subTitle"],
+    fontSize: "16px",
   },
 };

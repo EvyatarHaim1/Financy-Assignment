@@ -10,9 +10,9 @@ const Content = (): JSX.Element => {
   const [date, setDate] = useState(new Date());
   const [monthlyAmount, setMonthlyAmount] = useState(0);
 
-  const calculateSum = useMemo(() => {
-    return (price * date) / monthlyAmount;
-  }, [price, date, monthlyAmount]);
+  // const calculateSum = useMemo(() => {
+  //   return (price * date) / monthlyAmount;
+  // }, [price, date, monthlyAmount]);
 
   return (
     <div style={styles.container}>

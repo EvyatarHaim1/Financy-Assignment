@@ -1,3 +1,5 @@
+import { colors } from "../../constants";
+
 export const styles = {
   container: {
     display: "flex",
@@ -23,7 +25,7 @@ export const styles = {
   },
   text: {
     padding: "24px 32px",
-    backgroundColor: "#F4F8FA",
+    backgroundColor: colors["lightGreyBG"],
     height: "24px",
   },
 };

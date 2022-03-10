@@ -1,13 +1,18 @@
 export const styles = {
-  inputs: {
+  fields: {
     display: "flex",
   },
 
-  price: {
+  priceSection: {
+    display: "flex",
+    flexDirection: "column" as "column",
     width: "272px",
+    marginRight: "16px",
   },
 
-  date: {
+  dateSection: {
+    display: "flex",
+    flexDirection: "column" as "column",
     width: "192px",
   },
 

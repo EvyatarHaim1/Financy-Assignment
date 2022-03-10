@@ -1,15 +1,18 @@
+import { colors } from "../../constants";
+
 export const styles = {
   btn: {
-    display: "flex",
     justifyContent: "center",
     width: "320px",
     height: "56px",
-    backgroundColor: "#1B31A8",
+    backgroundColor: colors["darkBlue"],
     color: "white",
     alignItems: "center",
     fontSize: "16px",
     borderRadius: "32px",
     marginTop: "32px",
+    marginLeft: "auto",
+    marginRight: "auto",
     "&:hover": {
       cursor: "pointer",
     },

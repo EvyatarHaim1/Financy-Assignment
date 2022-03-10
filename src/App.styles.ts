@@ -1,8 +1,11 @@
+import { colors } from "./constants";
+
 export const styles = {
   title: {
     textAlign: "center" as "center",
-    color: "#1B31A8",
+    color: colors["darkBlue"],
     fontSize: "20px",
+    fontFamily: "Work Sans",
     marginBottom: "24px",
   },
   contant: {

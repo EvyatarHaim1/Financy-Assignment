@@ -1,2 +1,2 @@
-import ContentHead from './ContentHead';
+import ContentHead from "./ContentHead";
 export default ContentHead;

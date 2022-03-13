@@ -1,6 +1,6 @@
-import { colors } from "../../constants";
+import colors from "../../constants";
 
-export const styles = {
+const styles = {
   container: {
     display: "flex",
     height: "24px",
@@ -25,3 +25,5 @@ export const styles = {
     fontSize: "16px",
   },
 };
+
+export default styles;

@@ -1,11 +1,11 @@
-import { colors } from "../../constants";
+import colors from "../../constants";
 
-export const styles = {
+const styles = {
   container: {
     display: "flex",
-    flexDirection: "column" as "column",
+    flexDirection: "column",
     borderRadius: "8px",
-    border: "1px solid #E9EEF2",
+    border: "1px solid #e9eef2",
   },
 
   topSection: {
@@ -16,16 +16,19 @@ export const styles = {
   },
 
   title: {
-    fontsize: "20px",
+    fontSize: "20px",
   },
 
   price: {
     fontSize: "32px",
-    color: "#0079FF",
+    color: colors["blue"],
   },
+
   text: {
     padding: "24px 32px",
     backgroundColor: colors["lightGreyBG"],
     height: "24px",
   },
 };
+
+export default styles;

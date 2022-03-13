@@ -1,7 +1,7 @@
-import { styles } from "./ConfitmBtn.styles";
+import classes from "./ConfirmBtn.styles.ts";
 
 const ConfirmBtn = (): JSX.Element => {
-  return <button style={styles.btn}>Confirm</button>;
+  return <button className={classes.btn}>Confirm</button>;
 };
 
 export default ConfirmBtn;

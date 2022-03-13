@@ -1,8 +1,8 @@
-import { colors } from "./constants";
+import colors from "./constants";
 
-export const styles = {
+const styles = {
   title: {
-    textAlign: "center" as "center",
+    textAlign: "center",
     color: colors["darkBlue"],
     fontSize: "20px",
     fontFamily: "Work Sans",
@@ -15,3 +15,5 @@ export const styles = {
     height: "100vh",
   },
 };
+
+export default styles;

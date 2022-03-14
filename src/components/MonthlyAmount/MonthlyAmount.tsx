@@ -18,7 +18,7 @@ const MonthlyAmount: React.FC<Props> = ({ price, monthlyAmount }) => {
       </div>
       <p className={styles.bottom_section}>
         You’re planning <strong> 48 monthly deposits </strong> to reach your
-        <strong>{Math.trunc(price)}</strong>
+        <strong> ${Math.trunc(price)} </strong>
         goal by <strong> October 2020.</strong>
       </p>
     </div>

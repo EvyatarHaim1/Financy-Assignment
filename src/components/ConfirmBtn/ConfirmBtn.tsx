@@ -1,7 +1,16 @@
-import classes from "./ConfirmBtn.styles.ts";
+import React from "react";
+import styles from "./ConfirmBtn.module.css";
 
-const ConfirmBtn = (): JSX.Element => {
-  return <button className={classes.btn}>Confirm</button>;
+interface Props {
+  handleConfirm(): void;
+}
+
+const ConfirmBtn: React.FC<Props> = ({ handleConfirm }) => {
+  return (
+    <button onClick={handleConfirm} className={styles.btn}>
+      Confirm
+    </button>
+  );
 };
 
 export default ConfirmBtn;

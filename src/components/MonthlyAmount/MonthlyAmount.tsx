@@ -1,18 +1,25 @@
-import { Props } from "../../types";
-import classes from "./MonthlyAmount.styles.ts";
+import React from "react";
+import styles from "./MonthlyAmount.module.css";
 
-const MonthlyAmount = (props: Partial<Props>): JSX.Element => {
-  const { price, monthlyAmount } = props;
+interface Props {
+  price: number;
+  monthlyAmount: number;
+}
 
+const MonthlyAmount: React.FC<Props> = ({ price, monthlyAmount }) => {
   return (
-    <div className={classes.container}>
-      <div className={classes.topSection}>
-        <div>Monthly amount</div>
-        <div className={classes.price}>${monthlyAmount}</div>
+    <div className={styles.monthly_amount_container}>
+      <div className={styles.topSection}>
+        <div className={styles.monthly_amount_title}>Monthly amount</div>
+        <div className={styles.price}>
+          {`$`}
+          {Math.trunc(monthlyAmount)}
+        </div>
       </div>
-      <p className={classes.text}>
-        You’re planning<strong> 48 monthly deposits</strong> to reach your
-        <strong> {price}</strong> goal by <strong>October 2020.</strong>
+      <p className={styles.bottom_section}>
+        You’re planning <strong> 48 monthly deposits </strong> to reach your
+        <strong>{Math.trunc(price)}</strong>
+        goal by <strong> October 2020.</strong>
       </p>
     </div>
   );

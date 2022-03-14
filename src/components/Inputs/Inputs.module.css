@@ -1,0 +1,39 @@
+.fields {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.priceSection {
+  width: 272px;
+}
+
+.input_title {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.inputwrapper {
+  padding: 14px 0px 13px 17px;
+  border: 1px solid #e9eef2;
+  border-radius: 40px;
+}
+
+.input {
+  padding-left: 14px;
+  font-size: 24px;
+  color: #4d6475;
+  border: 1px solid #e9eef2;
+  border-radius: 4px;
+  width: 256px;
+  height: 56px;
+}
+
+.currency {
+  position: absolute;
+  margin-top: 15px;
+  font-size: 24px;
+  padding-left: 3px;
+  color: #cbd5dc;
+}

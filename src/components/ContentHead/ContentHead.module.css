@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Sans:wght@400;500&family=Neucha&family=Poppins:wght@500&family=Work+Sans:wght@600&display=swap");
+
+.content__head__container {
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  height: 29px;
+  margin-bottom: 28px;
+}
+
+.houseIcon {
+  display: inline-flex;
+  width: 64px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 16px;
+}
+
+.content_title {
+  font-size: 24px;
+  font-family: Rubik;
+  color: #1e2a32;
+}
+
+.subTitle {
+  position: absolute;
+  top: 22px;
+  color: #708797;
+  font-size: 16px;
+}

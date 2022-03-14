@@ -1,34 +1,50 @@
 import React from "react";
-import classes from "./Inputs.styles.ts";
-import { Props, months } from "../../types";
+import MonthYearPicker from "./MonthYearPicker/MonthYearPicker";
+import styles from "./Inputs.module.css";
 
-const Inputs = (props: Partial<Props>): JSX.Element => {
-  const { price, setPrice, date, setDate } = props;
+interface Props {
+  price: number;
+  setPrice(price: number): void;
+  date: Date;
+  setDate(date: Date): void;
+  months: number;
+  setMonths(months: number): void;
+}
 
-  // const handlePrice = (e: React.FormEvent<HTMLInputElement>) => {
-  //   setPrice!(Number(e.currentTarget.value));
-  // };
-
+const Inputs: React.FC<Props> = ({
+  price,
+  setPrice,
+  date,
+  setDate,
+  months,
+  setMonths,
+}) => {
   return (
-    <div className={classes.fields}>
-      <div className={classes.priceSection}>
-        <h4 className={classes.title}>Total amount</h4>
-        <div className={classes.inputWrapper}>
-          <span className={classes.currency}>$</span>
+    <div className={styles.fields}>
+      <div className={styles.priceSection}>
+        <h4 className={styles.input_title}>Total amount</h4>
+        <div className={styles.inputWrapper}>
+          <span className={styles.currency}>$</span>
           <input
             type="number"
-            className={classes.input}
+            className={styles.input}
             placeholder="price"
-            // name="amount"
-            // value={price}
-            //onChange={(price) => handlePrice(price)}
+            name="amount"
+            defaultValue={price}
+            onChange={(e) => setPrice(Number(e.target.value))}
           />
         </div>
       </div>
 
-      <div className={classes.dateSection}>
-        <h4 className={classes.title}>Reach goal by</h4>
-        <div className={classes.date}>{}</div>
+      <div>
+        <h4 className={styles.input_title}>Reach goal by</h4>
+        <MonthYearPicker
+          classes={styles.date}
+          date={date}
+          setDate={setDate}
+          months={months}
+          setMonths={setMonths}
+        />
       </div>
     </div>
   );

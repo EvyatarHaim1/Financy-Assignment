@@ -1,0 +1,31 @@
+.monthly_amount_container {
+  display: flex;
+  flex-direction: column;
+  height: 128px;
+  border-radius: 8px;
+  border: 1px solid #e9eef2;
+}
+
+.topsection {
+  display: flex;
+  padding: 24px 30.5px 3px 32px;
+  height: 78px;
+}
+
+.monthly_amount_title {
+  display: flex;
+  font-size: 20px;
+}
+
+.price {
+  display: flex;
+  font-size: 32px;
+  color: #0079ff;
+}
+
+.bottom_section {
+  background-color: #f4f8fa;
+  height: 80px;
+  padding: 24px 30.5px 0px 32px;
+  border-radius: 4px;
+}

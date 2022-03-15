@@ -1,7 +1,7 @@
 export type Month = string;
 export type Year = number;
 
-export const months: Month[] = [
+export const monthsArr: Month[] = [
   "January",
   "February",
   "March",

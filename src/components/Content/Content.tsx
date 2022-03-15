@@ -47,6 +47,7 @@ const Content: React.FC = () => {
         monthlyAmount={monthlyAmount}
         price={price}
         months={months}
+        date={date}
       />
       <ConfirmBtn handleConfirm={handleConfirm} />
       <ToastContainer />

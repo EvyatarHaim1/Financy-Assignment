@@ -19,6 +19,8 @@ When the users change the value of any of the inputs, the monthly deposit value 
 
 ### Evaluation
 
+deployed app - https://financy-assignment-evyatar-h.web.app/
+
 Be aware that Financy will mainly take into consideration the following evaluation criteria:
 
 - How close your page is to the mockups, both on mobile & desktop;

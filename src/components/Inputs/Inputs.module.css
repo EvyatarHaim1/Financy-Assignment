@@ -37,3 +37,12 @@
   padding-left: 3px;
   color: #cbd5dc;
 }
+
+@media screen and (max-width: 560px) {
+  .fields {
+    flex-direction: column;
+  }
+  .priceSection {
+    width: 100%;
+  }
+}

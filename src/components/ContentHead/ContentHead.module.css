@@ -3,7 +3,6 @@
 .content__head__container {
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
   height: 29px;
   margin-bottom: 28px;
 }

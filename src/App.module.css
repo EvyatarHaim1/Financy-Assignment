@@ -6,3 +6,10 @@
   font-family: Work Sans;
   margin-bottom: 24px;
 }
+
+@media screen and (max-width: 480px) {
+  .main_title {
+    width: 328px;
+    font-size: 18px;
+  }
+}

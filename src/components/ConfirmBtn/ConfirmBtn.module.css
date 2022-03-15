@@ -16,3 +16,9 @@
 .btn:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 560px) {
+  .btn {
+    width: 100%;
+  }
+}

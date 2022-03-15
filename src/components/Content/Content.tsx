@@ -16,14 +16,14 @@ const Content: React.FC = () => {
   const [monthlyAmount, setMonthlyAmount] = useState<number>(1);
 
   useEffect(() => {
-    let price_to_goal = price * months;
+    let price_to_goal = price / months;
     setMonthlyAmount(price_to_goal);
   }, [price, date, months]);
 
   const handleConfirm = () => {
     if (monthlyAmount > 1) {
       toast(
-        `Your monthly amount set to ${price} and your total price goal set to ${monthlyAmount}`
+        `Your monthly amount set to ${monthlyAmount} and your total price goal set to ${price}`
       );
     } else {
       alert(
@@ -43,7 +43,11 @@ const Content: React.FC = () => {
         months={months}
         setMonths={setMonths}
       />
-      <MonthlyAmount monthlyAmount={monthlyAmount} price={price} />
+      <MonthlyAmount
+        monthlyAmount={monthlyAmount}
+        price={price}
+        months={months}
+      />
       <ConfirmBtn handleConfirm={handleConfirm} />
       <ToastContainer />
     </div>

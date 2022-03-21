@@ -23,7 +23,9 @@ const Content: React.FC = () => {
   const handleConfirm = () => {
     if (monthlyAmount > 1) {
       toast(
-        `Your monthly amount set to ${monthlyAmount} and your total price goal set to ${price}`
+        `Your monthly amount set to ${Math.round(
+          monthlyAmount
+        )} and your total price goal set to ${price}`
       );
     } else {
       alert(
